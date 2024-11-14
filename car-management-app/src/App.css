@@ -1,0 +1,65 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add padding to content to avoid overlap by fixed navbar */
+body {
+  padding-top: 70px;  /* Adjust this value if necessary */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 15px;
+}
+
+.navbar a:hover, .navbar a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #f7f9fb;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar .ml-auto {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+/* Active and Hover Effects */
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #f7f9fb;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
